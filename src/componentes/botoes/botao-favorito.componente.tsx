@@ -1,19 +1,21 @@
 import "./botao-favorito.css";
-/**
- * Botão que indica se um elemento é favorito ou não, e dá a possibilidade de marcá-lo/desmarcá-lo
- *
- * Terá que tipar as propriedades se utilizar este componente
- *
- *
- * @returns Elemento JSX
- */
-const BotaoFavorito = ({ isFavorito, onClick }) => {
-  const src = isFavorito ? "/imagenes/star-filled.png" : "/imagenes/star.png";
+import { MouseEventHandler } from 'react';
+import secondHeart from '../../icons/heart-second.svg';
+import firstHeart from '../../icons/heart-first.svg';
+
+type Props = {
+  isFavorito: boolean;
+  favoritoHandler?: MouseEventHandler; 
+}
+
+ const BotaoFavorito = ({ isFavorito , favoritoHandler }: Props) => {
+  
+  const src = isFavorito ? secondHeart : firstHeart;
 
   return (
-    <div className="botao-favorito">
-      <img src={src} alt={"favorito"} />
-    </div>
+    <button onClick={favoritoHandler} className="botao-favorito">
+      <img src={src} alt="heart icon" />
+    </button>
   );
 };
 

@@ -1,20 +1,20 @@
 import "./grade-personagem.css";
 import CardPersonagem from "./card-personagem.componente";
+import { Personagem } from "../../types/personagensType";
 
-/**
- * Grade de personagens para a página inicial
- *
- * Você precisará adicionar as funções necessárias para exibir e paginar os personagens
- *
- *
- * @returns Elemento JSX
- */
-const GradePersonagem = () => {
+type Props = {
+  personagens: Personagem[] | undefined,
+}
+
+const GradePersonagem = ({personagens}: Props) => {
+
   return (
     <div className="grade-personagens">
-      <CardPersonagem />
-      <CardPersonagem />
-      <CardPersonagem />
+      {personagens && 
+        personagens.map((personagem: Personagem) => {
+        return <CardPersonagem key={personagem.id} personagem={personagem} />
+      })
+      }
     </div>
   );
 };
