@@ -1,5 +1,5 @@
 header {
-  background-color: white;
+  background-color: rgb(195, 195, 195);
   border-bottom: 1px solid #d0d0d0;
   width: calc(100% - 60px);
   color: black;
@@ -23,7 +23,6 @@ header > div nav ul {
   align-items: center;
 }
 
-
 header > div nav ul li {
   list-style: none;
 }
@@ -33,10 +32,10 @@ header > div nav ul li a {
   text-decoration: none;
   color: black;
   opacity: 0.8;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 header > div nav ul li a:hover {
-  color: rgba(57, 146, 255, 1);
+  color: white;
 }

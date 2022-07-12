@@ -26,11 +26,11 @@ const PaginaInicio = () => {
   return (
     <div className="container">
       <Helmet>
-        <title>Home</title>
+        <title>Início</title>
         <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/plasticine/100/000000/morty-smith.png" />
       </Helmet>
       <div className="actions">
-        <h3>Catálogo de Personagens</h3>
+        <h3>catálogo de personagens</h3>
       </div>
       <Filtros />
       <Paginacao />

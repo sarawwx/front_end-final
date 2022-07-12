@@ -13,15 +13,15 @@ const Cabecalho = () => {
     <header>
       <div>
         <div>
-          <h2>Exame Final de Frontend IV</h2>
+          <h2>FINAL</h2>
         </div>
         <nav>
           <ul>
             <li>
-              <Link to="/">Início</Link>
+              <Link to="/">início</Link>
             </li>
             <li>
-              <Link to="/favoritos">Favoritos</Link>
+              <Link to="/favoritos">favoritos</Link>
             </li>
           </ul>
         </nav>

@@ -23,10 +23,10 @@ const Paginacao = () => {
   return (
     <div className="paginacao">
       <button disabled={!paginacao.prev} onClick={prevPageHandler} className={"primary"}>
-        Anterior
+        anterior
       </button>
       <button disabled={!paginacao.next} onClick={nextPageHandler} className={"primary"}>
-        Próximo
+        próximo
       </button>
     </div>
   );

@@ -14,29 +14,29 @@
 
 button.primary {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     font-weight: 500;
     border: 0;
     border-radius: 5px;
-    background-color: rgb(10, 77, 157);
+    /* background-color: rgb(255, 255, 255); */
     color: white;
 }
 
 
 button.primary[disabled], button.danger[disabled] {
-    background-color: rgb(128, 134, 140);
+    background-color: rgba(0, 0, 0, 0.17);
 }
 
 button.danger {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
     font-weight: 500;
-    border: 0;
-    border-radius: 5px;
-    background-color: #8d2020;
-    color: white;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.652);
+    color: black;
 }
 
 span.favoritos-vazio, span.carregando {

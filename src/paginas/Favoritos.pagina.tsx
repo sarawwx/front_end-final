@@ -7,18 +7,8 @@ import { fetchFavPersonagensThunk, removerTodosFavs } from "../store/actions/per
 import { bindActionCreators } from 'redux';
 import Helmet from 'react-helmet';
 
-/**
- * Esta é a página de favoritos. Aqui você deve ver todos os personagens marcados como favoritos
- *
- * Uso:
- * ``` <PaginaFavoritos /> ```
- *
- * @returns Página de favoritos
- */
 const PaginaFavoritos = () => {
   const { favIdPersonagens, favPersonagens, isFetching, errorMessage } = store.getState().personagens;
-  
-  //const personagensFiltrados = personagens.filter((personagem: Personagem) => personagem.favorito ?? personagem); 
 
   useEffect(() => {
     if(!favIdPersonagens.length) return;
@@ -35,7 +25,7 @@ const PaginaFavoritos = () => {
     <div className="container">
       <Helmet>
         <title>Favoritos</title>
-        <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/plasticine/100/000000/morty-smith.png" />
+        <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/plasticine/100/000000/rick-sanchez.png" />
       </Helmet>
       <div className="actions">
         <h3>Personagens Favoritos</h3>

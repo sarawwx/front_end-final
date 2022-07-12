@@ -32,7 +32,7 @@ const Filtros = () => {
         onChange={handleFilterInput}
         value={filterValue}
       />
-      <button className="danger" onClick={limparFiltro}>Limpar filtro</button>
+      <button className="danger" onClick={limparFiltro}>limpar filtro</button>
     </div>
   );
 };

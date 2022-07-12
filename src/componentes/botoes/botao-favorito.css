@@ -1,11 +1,17 @@
 .botao-favorito {
   cursor: pointer;
   border: none;
-  background-color: transparent;
+  background-color: rgba(13, 13, 13, 0.207);
   width: max-content;
+  border: 1px solid #000000;
+  border-radius: 52%;
+
 }
 
 .botao-favorito > img {
   width: 35px;
   height: 35px;
+  padding: 6%;
 }
+
+

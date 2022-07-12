@@ -3,6 +3,7 @@
   flex-direction: column;
   position: relative;
   transition: all .1s ease;
+  background-color: white;
 }
 
 .card-personagem:hover {
@@ -13,22 +14,23 @@
   height: 300px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: 1px solid #d0d0d0;
+  border: 7px solid #ffffff;
 }
 
 .card-personagem button.botao-favorito {
   position: absolute;
-  top: .5rem;
-  right: .5rem;
+  top: .9rem;
+  right: .9rem;
+  background-color: rgb(255, 255, 255);
 }
 
 .card-personagem > div.card-personagem-body {
   padding: 10px;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #ffffff;
   border-top: 0;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
