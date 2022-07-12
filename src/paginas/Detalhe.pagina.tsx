@@ -58,7 +58,7 @@ const PaginaDetalhe = () => {
       <div className="container">
         <Helmet>
           <title>{personagem?.name}</title>
-          <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/plasticine/100/000000/morty-smith.png" />
+          <link type="image/png" sizes="32x32" rel="icon" href="https://e7.pngegg.com/pngimages/524/192/png-clipart-vegetable-cartoon-character-illustration-rick-sanchez-morty-smith-pickle-rick-youtube-rick-and-morty-season-3-rick-and-morty-food-grass-thumbnail.png" />
         </Helmet>
         <h3>{personagem?.name}</h3>
         <div className={"detalhe"}>

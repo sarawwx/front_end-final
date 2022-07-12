@@ -6,7 +6,7 @@ import "./cabecalho.css";
  *
  * Uso: `<Cabecalho />`
  *
- * @returns {JSX.Element}
+ * @returns Elemento JSX
  */
 const Cabecalho = () => {
   return (
@@ -18,13 +18,10 @@ const Cabecalho = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to="/">Início</Link>
             </li>
             <li>
               <Link to="/favoritos">Favoritos</Link>
-            </li>
-            <li>
-              <Link to="/detalhe">Detalhe</Link>
             </li>
           </ul>
         </nav>
