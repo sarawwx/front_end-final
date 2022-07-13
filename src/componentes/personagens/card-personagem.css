@@ -10,11 +10,11 @@
   transform: scale(1.02);
 }
 .card-personagem > img {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: 7px solid #ffffff;
+  border: 8px solid #ffffff;
 }
 
 .card-personagem button.botao-favorito {
