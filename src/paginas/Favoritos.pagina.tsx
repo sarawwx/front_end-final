@@ -28,12 +28,12 @@ const PaginaFavoritos = () => {
         <link type="image/png" sizes="32x32" rel="icon" href="https://img.icons8.com/plasticine/100/000000/rick-sanchez.png" />
       </Helmet>
       <div className="actions">
-        <h3>Personagens Favoritos</h3>
+        <h3>personagens Favoritos</h3>
         <button disabled={!favIdPersonagens.length} className="danger" onClick={removerFavsHandler}>Remover favoritos</button>
       </div>
-      {errorMessage && <span>Erro ao recuperar personagens favoritos: {errorMessage}</span>}
-      {isFetching && <span>Carregando personagens favoritos...</span>}
-      {!favIdPersonagens.length ? <span className="favoritos-vazio">Nenhum personagem favorito</span>: <GradePersonagens personagens={favPersonagens}/>}
+      {errorMessage && <span>erro ao recuperar personagens favoritos: {errorMessage}</span>}
+      {isFetching && <span>carregando personagens favoritos...</span>}
+      {!favIdPersonagens.length ? <span className="favoritos-vazio">nenhum personagem favorito</span>: <GradePersonagens personagens={favPersonagens}/>}
     </div>
   );
 };
