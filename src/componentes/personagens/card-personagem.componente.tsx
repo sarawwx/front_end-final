@@ -11,6 +11,8 @@ type Props = {
   personagem: Personagem;
 }
 
+// card para cada personagem da grade
+
 const CardPersonagem = ({ personagem }: Props) => {
   
   const navigate = useNavigate();

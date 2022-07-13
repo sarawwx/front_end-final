@@ -36,7 +36,7 @@ export const personagemReducer = (state = initialState, action: tipos.ActionType
         })
 
       }
-    case tipos.FETCH_PERSONAGEM:
+    case tipos.FETCH_PERSONAGEM: //valida o estado favoritado quando feito o refetch
       return {
         ...state,
         isFetching: false,
@@ -60,7 +60,7 @@ export const personagemReducer = (state = initialState, action: tipos.ActionType
         favPersonagens: action.payload,
       }
     case tipos.UPDATE_PERSONAGEM_FAVORITO_STATUS:
-      return {
+      return { //para atualizar o estado favoritado do personagem
         ...state,
         personagem: state.personagem.id === action.payload ? {
           ...state.personagem,

@@ -5,6 +5,8 @@ type Props = {
   episodio: Episodio,
 }
 
+// este é o card para cada episódio na visualização do personagem
+
 const CardEpisodio = ({ episodio }: Props) => {
   return (
     <div className="card-episodio">

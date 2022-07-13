@@ -6,6 +6,8 @@ import { filterPersonagensThunk, fetchPersonagensThunk } from "../../store/actio
 import { RootState } from '../../types/personagensType';
 import { bindActionCreators } from 'redux';
 
+// componente que tem o controle do filtro de personagem
+
 const Filtros = () => {
   const [filterValue, setFilterValue] = useState("");
   

@@ -6,6 +6,8 @@ type Props = {
   personagens: Personagem[] | undefined,
 }
 
+// esta é a grade de perosganes que fica na página inicial
+
 const GradePersonagem = ({personagens}: Props) => {
 
   return (

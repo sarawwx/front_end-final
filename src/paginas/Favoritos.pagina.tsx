@@ -7,6 +7,8 @@ import { fetchFavPersonagensThunk, removerTodosFavs } from "../store/actions/per
 import { bindActionCreators } from 'redux';
 import Helmet from 'react-helmet';
 
+// aqui é a página dos favoritos, na qual contém os personagens favoritados
+
 const PaginaFavoritos = () => {
   const { favIdPersonagens, favPersonagens, isFetching, errorMessage } = store.getState().personagens;
 

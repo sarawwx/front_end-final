@@ -9,11 +9,7 @@ import { fetchPersonagensThunk } from "../store/actions/personagens.actions";
 import { useEffect } from 'react';
 import Helmet from 'react-helmet';
 
-/**
-* <PaginaInicio /> 
-*
-* @returns Página inicio
-*/
+// esta é a pagina principal, que contém o espaço para uma pesquisa filtadra
 
 const PaginaInicio = () => {
 

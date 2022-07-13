@@ -9,6 +9,7 @@ export const fetchPersonagensSuccess = (apiData: tipos.ApiData): tipos.ActionTyp
   }
 )
 
+// return mensagem de erro
 export const fetchPersonagensError = (errorMessage: string): tipos.ActionType => (
   {
     type: tipos.FETCH_PERSONAGENS_ERROR,
@@ -16,6 +17,7 @@ export const fetchPersonagensError = (errorMessage: string): tipos.ActionType =>
   }
 )
 
+// atualiza o estado favoritado no personagem
 export const updateFavPersonagem = (id: number): tipos.ActionType => (
   {
     type: tipos.UPDATE_PERSONAGEM_FAVORITO_STATUS,
@@ -23,12 +25,14 @@ export const updateFavPersonagem = (id: number): tipos.ActionType => (
   }
 )
 
+// remove todos os pesonagens favoritados
 export const removerTodosFavs = (): tipos.ActionType => (
   {
     type: tipos.REMOVER_TODOS_FAVS
   }
 )
 
+// faz a busca pelos personagens favoritados
 export const fetchFavPersonagens = (personagens: tipos.Personagem[]): tipos.ActionType => (
   {
     type: tipos.FETCH_PERSONAGENS_FAVORITO,
@@ -50,6 +54,7 @@ export const fetchEpisodios = (episodios: tipos.Episodio[]): tipos.ActionType =>
   } 
 )
 
+// faz uma requisição para recuperar apenas um personagem conforme o ID
 export const fetchPersonagensThunk = () => async (dispatch: any) => {
 
   dispatch(fetchPersonagensStarted());
@@ -66,6 +71,8 @@ export const fetchPersonagensThunk = () => async (dispatch: any) => {
     dispatch(fetchPersonagensError(error.message));
   }
 }
+
+// faz uma requisição para recuperar
 
 export const filterPersonagensThunk = (filtro: string) => async (dispatch: any) => {
 

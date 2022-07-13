@@ -11,6 +11,8 @@ import { useParams } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import {getEpisodiosId} from "../utils/utils";
 
+// esta é a página de detalhes dos personagens, onde é possível encontrar os episodios em que o personagem selecionado já participou
+
 const PaginaDetalhe = () => {
   const { id } = useParams();
 
@@ -41,7 +43,7 @@ const PaginaDetalhe = () => {
 
   return (
     <>
-    {isFetching && <span>Carregando personagem...</span>}
+    {isFetching && <span>carregando personagem...</span>}
     {!isFetching && 
       <div className="container">
         <Helmet>

@@ -8,6 +8,8 @@ type Props = {
   favoritoHandler?: MouseEventHandler; 
 }
 
+// este é o botão que indica se um elemento é favorito ou não, e dá a possibilidade de marcá-lo/desmarcá-lo
+
  const BotaoFavorito = ({ isFavorito , favoritoHandler }: Props) => {
   
   const src = isFavorito ? secondHeart : firstHeart;

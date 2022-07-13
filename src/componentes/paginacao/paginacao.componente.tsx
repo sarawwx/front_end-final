@@ -5,6 +5,8 @@ import store from '../../store/index';
 import { connect } from "react-redux";
 import { fetchNovaPaginaThunk } from '../../store/actions/personagens.actions';
 
+// componente com a opcao de navegar entre as paginas
+
 const Paginacao = () => {
   
   const { paginacao } = store.getState().personagens;
